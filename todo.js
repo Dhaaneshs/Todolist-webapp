@@ -20,3 +20,7 @@ document.querySelector(".inp").addEventListener("keyup", function(event) {
         addt(event); 
     }
 });
+document.querySelector(".clear").addEventListener('click',function(){
+    const table=document.getElementsByClassName("table")[0];
+    while(table.rows.length>0)table.deleteRow(0);
+});
